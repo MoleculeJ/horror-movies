@@ -1,0 +1,342 @@
+/* COLOR
+RED #C71E1D
+DARK PURPLR #0D0628
+WHITE #FFFFFF
+BLUE #1979b9
+ORANGE #FAA916 */
+
+/* default */
+body {
+    margin: 0;
+    font-family: 'Poppins', san-serif;
+    color: white; 
+    scroll-behavior: smooth;
+}
+
+/* default value of each section */
+section {
+    min-height: 100vh;
+    background-color: #0D0628;
+}
+
+/* landing */
+.landing {
+    display: flex;
+    background-image: url('bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.landing-logo {
+    position: absolute;
+    top: -140px;
+    left: -110px;
+    width: 100px;
+    height: auto;
+    z-index: 1;
+}
+
+.landing-content {
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.landing-content h1 {
+    color: #ffffff;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    font-style: normal;
+}
+
+.landing-content p {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+/* intro */
+.intro {
+    text-align: justify;
+}
+
+.intro .blood-transition1 {
+    display: block;
+    height: 30vh;
+    width: 100%;
+    background-image: url("blood1.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: top left;
+    z-index: 0;
+}
+
+.intro p {
+    display: block;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+}
+
+#intro-second-paragraph {
+    padding-top: 20px;
+}
+
+/* fact-1 */
+.fact-1 h2 {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0px;
+    color: #C71E1D;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+}
+
+.fact-1 p {
+    display: block;
+    text-align: justify;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fact-1 img {
+    display: block;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+/* fact-2 */
+.fact-2 {
+    position: relative;
+    min-height: 280vh;
+    padding-bottom: 200px;
+}
+
+.fact-2 h2 {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0px;
+    color: #C71E1D;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+}
+
+.fact-2 p {
+    display: block;
+    text-align: justify;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fact-2 .image-container2 {
+    position: sticky;
+    top: 7vh;
+    height: 60vh;
+}
+
+.fact-2 .image-container2 .image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fact-2 .image-container2 .image.visible {
+    opacity: 1;
+}
+
+/* fact-3 */
+.fact-3 {
+    position: relative;
+    padding-top: 100px;
+    min-height: 280vh;
+    padding-bottom: 200px;
+}
+
+.fact-3 h2 {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0px;
+    color: #C71E1D;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+}
+
+.fact-3 p {
+    display: block;
+    text-align: justify;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fact-3 .image-container3 {
+    position: sticky;
+    top: 7vh;
+    height: 60vh;
+}
+
+.fact-3 .image-container3 .image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fact-3 .image-container3 .image.visible {
+    opacity: 1;
+}
+
+/* fact-4 */
+.fact-4 {
+    position: relative;
+    padding-top: 100px;
+    min-height: 280vh;
+    padding-bottom: 200px;
+}
+
+.fact-4 h2 {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0px;
+    color: #C71E1D;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+}
+
+.fact-4 p {
+    display: block;
+    text-align: justify;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fact-4 .image-container4 {
+    position: sticky;
+    top: 7vh;
+    height: 60vh;
+}
+
+.fact-4 .image-container4 .image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fact-4 .image-container4 .image.visible {
+    opacity: 1;
+}
+
+/* fact-5 */
+.fact-5 {
+    position: relative;
+    padding-top: 100px;
+    min-height: 280vh;
+    padding-bottom: 200px;
+}
+
+.fact-5 h2 {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0px;
+    color: #C71E1D;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+}
+
+.fact-5 p {
+    display: block;
+    text-align: justify;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fact-5 .image-container5 {
+    position: sticky;
+    top: 7vh;
+    height: 60vh;
+}
+
+.fact-5 .image-container5 .image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fact-5 .image-container5 .image.visible {
+    opacity: 1;
+}
+
+/* outro */
+.outro {
+    background-color: #C71E1D;
+    text-align: justify;
+}
+
+.outro .blood-transition2 {
+    display: block;
+    height: 30vh;
+    width: 100%;
+    background-image: url("blood2.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: top left;
+    z-index: 0;
+}
+
+.outro p {
+    display: block;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+}
+
+#outro-second-paragraph {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+}

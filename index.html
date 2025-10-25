@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horror Movies</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="landing">
+            <div class="landing-content">
+                <img src="cns-logo.jpeg" alt="CNS Logo" class="landing-logo">
+                <h1>Data Shows Five Fun Facts<br>about Horror Movies</h1>
+                <p>By Molecule Jongwilai</p>
+            </div>
+        </section>
+
+
+        <section class="intro">
+            <div class="blood-transition1"></div>
+            <p>October is a huge time for horror movies. From 2020 to 2022, almost a thousand horror movies were released in October, while the average number of horror films released monthly was around 470, according to data set from The Movie Database (TMDB) website.</p>
+            <p id="intro-second-paragraph">Capital News Service analyzed horror movie data from TMDB and found five interesting facts about these spooky films that help us understand them a little better.</p>
+        </section>
+
+
+        <section class="fact-1">
+            <h2>1. January turns out to be a more popular month for horror movies than October.</h2>
+            <p>Of the 32,540 horror movies released between 1950 and 2022, TMDB data show that January was the top choice for film studios to release them, with almost 5,600 films coming out that month, above the average number of 2,700 monthly released films. Surprisingly, October was in second place for horror films' release with almost 4,900 movies.</p>
+            <img src="horror-fact1.png" alt="most horror movies are released in January and October">
+        </section>
+
+
+        <section class="fact-2">
+            <h2>2. It’s quite hard for a horror movie to become a box office hit.</h2>
+            <p>We narrowed it down to 721 horror films that were produced by and made at least $1 million. Data show that most horror movies were made with budget under $50 million and rarely earned more than $200 million.</p>
+            <p>A few horror movies with more than $100 million in cost, like World War Z, The Meg or The Mummy, managed to become a blockbuster hit that gained over $400 million, while a rare case like It could make more than $700 million from only a $35 million budget.</p>
+            
+            <div class="image-container2"> 
+                <img src="horror-fact2a.png" class ="image imagef2-1 visible" alt="fact2a">
+                <img src="horror-fact2b.png" class ="image imagef2-2" alt="fact2b">
+            </div>
+        </section>
+
+
+        <section class="fact-3">
+            <h2>3. Like films in most genres, summer and Christmas are the best times for horror films to make money.</h2>
+            <p>It is uncommon for horror films to earn more than $300 million at the box office. However, most that accomplished this milestone, including Jaws, It Chapter Two or The Exorcist, were released between June and September or in December.</p>
+            
+            <div class="image-container3"> 
+                <img src="horror-fact3a.png" class ="image imagef3-1 visible" alt="fact3a">
+                <img src="horror-fact3b.png" class ="image imagef3-2" alt="fact3b">
+            </div>
+        </section>
+
+        <section class="fact-4">
+            <h2>4. 60s through 80s horror movies tended to receive higher ratings from the audience.</h2>
+            <p>According to the TMDB’s average voted scores, most horror movies were rated between 5.0 and 7.0. Nonetheless, those released between 1960 and 1989 tended to receive better scores than films from other decades in overview.</p>
+
+            <div class="image-container4"> 
+                <img src="horror-fact4a.png" class ="image imagef4-1 visible" alt="fact4a">
+                <img src="horror-fact4b.png" class ="image imagef4-2" alt="fact4b">
+            </div>
+        </section>
+
+        <section class="fact-5">
+            <h2>5. Budget and runtime do not determine a good horror movie.</h2>
+            <p>TMDB data show that the movie’s budget and duration do not correlate with its audience score. Almost every horror movie was rated between 4.0 and 8.0, and this range included movies with a low budget, to those with more than $100 million production, and films that run from only an hour to almost three hours.</p>
+
+            <div class="image-container5"> 
+                <img src="horror-fact5a.png" class ="image imagef5-1 visible" alt="fact5a">
+                <img src="horror-fact5b.png" class ="image imagef5-2" alt="fact5b">
+            </div>
+        </section>
+
+        <section class="outro">
+            <div class="blood-transition2"></div>
+            <p>So far, 2025 has also been a strong year for horror movies. Box office successes like The Conjuring: Last Rites and Final Destination Bloodlines made over $300 million with a budget of around $50 million. There have also been several critically acclaimed films, including Sinners, Companion and Weapon, with an above 90% Rotten Tomatoes score which may be worth adding to the Letterboxd watchlist this Halloween.</p>
+            <p id="outro-second-paragraph">By Molecule Jongwilai | Capital News Service</p>
+        </section>
+
+        <script>
+                window.addEventListener('scroll', () => {
+                    const fact2 = document.querySelector('.fact-2');
+                    const fact2img1 = document.querySelector('.imagef2-1');
+                    const fact2img2 = document.querySelector('.imagef2-2');
+                    const rect = fact2.getBoundingClientRect();
+
+                    const sectionTop = fact2.offsetTop;
+                    const sectionScroll = window.scrollY - sectionTop;
+
+                    if (sectionScroll > 500) {
+                        fact2img1.classList.remove('visible');
+                        fact2img2.classList.add('visible');
+                    } else {
+                        fact2img1.classList.add('visible');
+                        fact2img2.classList.remove('visible');
+                    }
+                });
+
+                window.addEventListener('scroll', () => {
+                    const fact3 = document.querySelector('.fact-3');
+                    const fact3img1 = document.querySelector('.imagef3-1');
+                    const fact3img2 = document.querySelector('.imagef3-2');
+                    const rect = fact3.getBoundingClientRect();
+
+                    const sectionTop = fact3.offsetTop;
+                    const sectionScroll = window.scrollY - sectionTop;
+
+                    if (sectionScroll > 500) {
+                        fact3img1.classList.remove('visible');
+                        fact3img2.classList.add('visible');
+                    } else {
+                        fact3img1.classList.add('visible');
+                        fact3img2.classList.remove('visible');
+                    }
+                });
+
+                window.addEventListener('scroll', () => {
+                    const fact4 = document.querySelector('.fact-4');
+                    const fact4img1 = document.querySelector('.imagef4-1');
+                    const fact4img2 = document.querySelector('.imagef4-2');
+                    const rect = fact4.getBoundingClientRect();
+
+                    const sectionTop = fact4.offsetTop;
+                    const sectionScroll = window.scrollY - sectionTop;
+
+                    if (sectionScroll > 500) {
+                        fact4img1.classList.remove('visible');
+                        fact4img2.classList.add('visible');
+                    } else {
+                        fact4img1.classList.add('visible');
+                        fact4img2.classList.remove('visible');
+                    }
+                });
+
+                window.addEventListener('scroll', () => {
+                    const fact5 = document.querySelector('.fact-5');
+                    const fact5img1 = document.querySelector('.imagef5-1');
+                    const fact5img2 = document.querySelector('.imagef5-2');
+                    const rect = fact5.getBoundingClientRect();
+
+                    const sectionTop = fact5.offsetTop;
+                    const sectionScroll = window.scrollY - sectionTop;
+
+                    if (sectionScroll > 500) {
+                        fact5img1.classList.remove('visible');
+                        fact5img2.classList.add('visible');
+                    } else {
+                        fact5img1.classList.add('visible');
+                        fact5img2.classList.remove('visible');
+                    }
+                });
+        </script>
+    </body>
+</html>
