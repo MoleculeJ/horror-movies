@@ -7,36 +7,69 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+        
+        <!--Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@cnsmaryland">
+        <meta name="twitter:title" content="Trading Away Justice">
+        <meta name="twitter:description" content="Why do defendants plead guilty to crimes they didn't commit?">
+        <meta name="twitter:creator" content="@cnsmaryland">
+        <meta name="twitter:image" content="http://cnsmaryland.org/interactives/spring-2018/plea-bargain/assets/main-social.png" />
+
+        <!--Facebook OpenGraph-->
+        <meta property="og:title" content="Trading Away Justice">
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://cnsmaryland.org/interactives/spring-2018/plea-bargain/index.html">
+        <meta property="og:description" content="Why do defendants plead guilty to crimes they didn't commit?">
+        <meta property="og:image" content="http://cnsmaryland.org/interactives/spring-2018/plea-bargain/assets/main-social.png" />
+        <meta property="og:site_name" content="CNS Maryland">
+        <meta property="fb:app_id" content="209502139105366" />
+
+        <!-- METRICS -->
+        <meta name="parsely-title" content="Add title" />
+        <meta name="parsely-link" content="Add link" />
+        <meta name="parsely-type" content="post" />
+        <meta name="parsely-pub-date" content="Add date" />
+        <meta name="parsely-section" content="Investigations" />
+        <meta name="parsely-author" content="CNS Maryland" />
+        <meta name="parsely-tags" content="crime, investigative journalism, interactives" />
+
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <section class="landing">
-            <img src="cns-logo.jpeg" alt="CNS Logo" class="landing-logo">
+            <div class="navbar">
+                <a class="navbar-brand" href="http://cnsmaryland.org/" target="_blank">
+                    <img src="logo.png" id="logo">
+                </a>
+            </div>
             <div class="landing-content">
-                <h1>Data Shows Five Fun Facts<br>about Horror Movies</h1>
+                <h1 id="headline1">Spooky season isn’t<br>just in October:</h1>
+                <h1 id="headline2">Examining the data around horror movies</h1>
                 <p>By Molecule Jongwilai</p>
+                <p id="disclaimer">This scrolly-telling story is best experienced on a desktop or widescreen display.</p>
             </div>
         </section>
 
 
         <section class="intro">
             <div class="blood-transition1"></div>
-            <p>October is a huge time for horror movies. From 2020 to 2022, almost a thousand horror movies were released in October, while the average number of horror films released monthly was around 470, according to data set from The Movie Database (TMDB) website.</p>
-            <p id="intro-second-paragraph">Capital News Service analyzed horror movie data from TMDB and found five interesting facts about these spooky films that help us understand them a little better.</p>
+            <p>With the Halloween season underway, it is easy to assume that October is the biggest time of the year for horror movies. However, data from The Movie Database (TMDB) website shows audiences love spooky movies year round; January was the most popular month for releasing scary films while the summer and holiday seasons tend to be the best times for horror movies to become box office hits. <span style="color: #C71E1D; font-weight: 600;">Spooky season isn’t just in October.</span> </p>
+            <p id="intro-second-paragraph">Capital News Service analyzed data about horror movies released between 1950 and 2022 from TMDB and found five interesting facts about these spooky films that help us understand them a little better.</p>
         </section>
 
 
         <section class="fact-1">
-            <h2>1. January turns out to be a more popular month for horror movies than October.</h2>
-            <p>Of the 32,540 horror movies released between 1950 and 2022, TMDB data show that January was the top choice for film studios to release them, with almost 5,600 films coming out that month, above the average number of 2,700 monthly released films. Surprisingly, October was in second place for horror films' release with almost 4,900 movies.</p>
+            <h2>1. January is a more popular month to release horror movies than October</h2>
+            <p>Of the over 30,000 horror movies released between 1950 and 2022, TMDB data shows that January was the top month for horror releases, with almost 5,600 films released in January over the 72 year period. October was in second place for horror films' release with almost 4,900 movies released on Halloween month between 1950 and 2022.</p>
             <img src="horror-fact1.png" alt="most horror movies are released in January and October">
         </section>
 
 
         <section class="fact-2">
-            <h2>2. It’s quite hard for a horror movie to become a box office hit.</h2>
-            <p>We narrowed it down to 721 horror films that were produced by and made at least $1 million. Data show that most horror movies were made with budget under $50 million and rarely earned more than $200 million.</p>
-            <p>A few horror movies with more than $100 million in cost, like World War Z, The Meg or The Mummy, managed to become a blockbuster hit that gained over $400 million, while a rare case like It could make more than $700 million from only a $35 million budget.</p>
+            <h2>2. It’s difficult for horror movies to become box office hits</h2>
+            <p>Around 720 horror films in the dataset had a budget of at least $1 million and produced at least that same amount in revenue. Most horror movies were made for under $50 million and rarely earned more than $200 million in revenue.</p>
+            <p>There are exceptions. <i>World War Z</i>, <i>The Meg</i> or <i>The Mummy</i>, which all cost over $100 million to make, managed to become blockbuster hits that made over $400 million in revenue, and a rare case like <i>It</i> made more than $700 million from only a $35 million budget.</p>
             
             <div class="image-container2"> 
                 <img src="horror-fact2a.png" class ="image imagef2-1 visible" alt="fact2a">
@@ -46,8 +79,8 @@
 
 
         <section class="fact-3">
-            <h2>3. Like films in most genres, summer and Christmas are the best times for horror films to make money.</h2>
-            <p>It is uncommon for horror films to earn more than $300 million at the box office. However, most that accomplished this milestone, including Jaws, It Chapter Two or The Exorcist, were released between June and September or in December.</p>
+            <h2>3. Like most films, summer and Christmas are the best times for horror films to make money</h2>
+            <p>It is rare for horror films to earn more than $300 million at the box office. Most that accomplished this milestone, including <i>Jaws</i>, <i>It Chapter Two</i> or <i>The Exorcist</i>, were released during the summer movie season, between June and September, or around the holidays in December.</p>
             
             <div class="image-container3"> 
                 <img src="horror-fact3a.png" class ="image imagef3-1 visible" alt="fact3a">
@@ -56,8 +89,8 @@
         </section>
 
         <section class="fact-4">
-            <h2>4. 60s through 80s horror movies tended to receive higher ratings from the audience.</h2>
-            <p>According to the TMDB’s average voted scores, most horror movies were rated between 5.0 and 7.0. Nonetheless, those released between 1960 and 1989 tended to receive better scores than films from other decades in overview.</p>
+            <h2>4. 60s through 80s horror movies tended to receive higher ratings from the audience</h2>
+            <p>According to the TMDB’s average voted scores, most horror movies were rated between 5.0 and 7.0 and films released between 1960 and 1989, including <i>Rosemary’s Baby</i>, <i>Alien</i> or <i>The Thing</i>, tended to receive better scores than films from other decades.</p>
 
             <div class="image-container4"> 
                 <img src="horror-fact4a.png" class ="image imagef4-1 visible" alt="fact4a">
@@ -66,8 +99,8 @@
         </section>
 
         <section class="fact-5">
-            <h2>5. Budget and runtime do not determine a good horror movie.</h2>
-            <p>TMDB data show that the movie’s budget and duration do not correlate with its audience score. Almost every horror movie was rated between 4.0 and 8.0, and this range included movies with a low budget, to those with more than $100 million production, and films that run from only an hour to almost three hours.</p>
+            <h2>5. Budget and runtime do not necessarily determine a good horror movie</h2>
+            <p>TMDB data show that the movie’s budget and duration do not necessarily correlate with its audience score. The majority of films in the dataset were scored between 4.0 and 8.0, and this range included movies with a low budget, like a masterpiece, <i>The Shining</i>, to those with more than $100 million for packed action sequences like <i>Van Helsing</i>, and films that run from only an hour, like a zombie found footage, <i>[REC]</i>, to almost three hours epic conclusion like <i>It Chapter Two</i>.</p>
 
             <div class="image-container5"> 
                 <img src="horror-fact5a.png" class ="image imagef5-1 visible" alt="fact5a">
@@ -77,7 +110,7 @@
 
         <section class="outro">
             <div class="blood-transition2"></div>
-            <p>So far, 2025 has also been a strong year for horror movies. Box office successes like The Conjuring: Last Rites and Final Destination Bloodlines made over $300 million with a budget of around $50 million. There have also been several critically acclaimed films, including Sinners, Companion and Weapon, with an above 90% Rotten Tomatoes score which may be worth adding to the Letterboxd watchlist this Halloween.</p>
+            <p>So far, 2025 has been a strong year for horror movies. Box office successes like <i>The Conjuring: Last Rites</i> and <i>Final Destination Bloodlines</i> made over $300 million with a budget of around $50 million. There have also been several critically acclaimed films, including <i>Sinners</i>, <i>Companion</i> and <i>Weapons</i>, with an above 90% Rotten Tomatoes score which may be worth adding to your Letterboxd watchlist this Halloween.</p>
             <p id="outro-second-paragraph">By Molecule Jongwilai | Capital News Service</p>
         </section>
 
